@@ -1,0 +1,59 @@
+MongoDB connected
+node : node:events:496
+At line:1 char:1
++ node server.js 2>&1 | 
+Out-File -FilePath 
+startup_err.txt -Encoding 
+as ...
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: (node:  
+  events:496:String) [],    
+ RemoteException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+      throw er; // 
+Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: 
+address already in use 
+:::4000
+    at 
+Server.setupListenHandle 
+[as _listen2] 
+(node:net:1940:16)
+    at listenInCluster 
+(node:net:1997:12)
+    at Server.listen 
+(node:net:2102:7)
+    at Function.listen 
+(C:\Users\Diwakar Nexis\Down
+loads\MERN-Ecommerce-main (1
+)\MERN-Ecommerce-main\backen
+d\node_modules\express\lib\a
+pplication.js:635:24)
+    at startServer (file:///
+C:/Users/Diwakar%20Nexis/Dow
+nloads/MERN-Ecommerce-main%2
+0(1)/MERN-Ecommerce-main/bac
+kend/server.js:39:13)
+    at process.processTicksA
+ndRejections (node:internal/
+process/task_queues:105:5)
+Emitted 'error' event on 
+Server instance at:
+    at emitErrorNT 
+(node:net:1976:8)
+    at process.processTicksA
+ndRejections (node:internal/
+process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v22.18.0
